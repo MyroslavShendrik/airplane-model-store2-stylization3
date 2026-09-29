@@ -6,7 +6,6 @@ const textField = {
   fontWeight: 700,
 };
 
-
 //! Стилі для значень текстових полів
 const textFieldValue = {
   fontWeight: 400,
@@ -18,25 +17,26 @@ const imageTitles = {
   textAlign: "center",
   color: "blue",
 };
-export default function PlaneItem ({
-name,
-image = defaultImage,
-category,
-productType,
-age,
-gender,
-showMonie,
-character,
-year,
-price,
-description
-})
-{
 
+export default function CardItem({
+  name,
+  image = {},
+  category,
+  productType,
+  age,
+  gender,
+  showMovie,
+  character,
+  year,
+  price,
+  discription,
+  interestingInfo,
+  features,
+}) {
   return (
     <>
       <h3
-      style={{
+        style={{
           marginBottom: 12,
           padding: "12px 16px",
           fontSize: 32,
@@ -45,25 +45,82 @@ description
           backgroundColor: "yellow",
           color: "blue",
         }}
-      >{name}</h3>
-      <img src={image} alt={name}  />
-      <p style={textField}>Категорія: <span style={textFieldValue}>{category}</span> </p>
-      <p style={textField}>Тип продукту: <span style={textFieldValue}>{productType}</span> </p>
-      <p style={textField}>Вік: <span style={textFieldValue}>{age}</span> </p>
-      <p style={textField}>Гендер: <span style={textFieldValue}>{gender}</span> </p>
-      <p style={textField}>Де з'являвся: <span style={textFieldValue}>{showMonie}</span> </p>
-      <p style={textField}>Герої: <span style={textFieldValue}>{character}</span> </p>
-      <p style={textField}>Рік випуску: <span style={textFieldValue}>{year}</span></p>
-      <p style={textField}>Ціна: <span style={textFieldValue}>{price}</span></p>
-      <p style={textField}>Опис: <span style={textFieldValue}>{description}</span></p>
+      >
+        {name}
+      </h3>
+
+     <h4 style={imageTitles}>Основне зображення</h4>
+<img src={image.real || defaultImage} alt={name} />
+
+<h4 style={imageTitles}>Фото товару</h4>
+<img src={image.toy || defaultImage} alt={`${name} toy`} />
+
+<h4 style={imageTitles}>Додаткове зображення</h4>
+<img src={image.additional || defaultImage} alt={`${name} additional`} />
+
+      <p style={textField}>
+        Категорія: <span style={textFieldValue}>{category}</span>
+      </p>
+
+      <p style={textField}>
+        Тип продукту: <span style={textFieldValue}>{productType}</span>
+      </p>
+
+      <p style={textField}>
+        Вік: <span style={textFieldValue}>{age}</span>
+      </p>
+
+      <p style={textField}>
+        Гендер: <span style={textFieldValue}>{gender}</span>
+      </p>
+
+      <p style={textField}>
+        Де з'являвся: <span style={textFieldValue}>{showMovie}</span>
+      </p>
+
+      <p style={textField}>
+        Герої: <span style={textFieldValue}>{character}</span>
+      </p>
+
+      <p style={textField}>
+        Рік випуску: <span style={textFieldValue}>{year}</span>
+      </p>
+
+      <p style={textField}>
+        Ціна: <span style={textFieldValue}>{price}</span>
+      </p>
+
+      <p style={textField}>
+        Опис: <span style={textFieldValue}>{discription}</span>
+      </p>
+
+      {interestingInfo && (
+        <p style={textField}>
+          Цікаво:{" "}
+          <span style={textFieldValue}>{interestingInfo}</span>
+        </p>
+      )}
+
+      {features && (
+        <div>
+          <p style={textField}>Особливості:</p>
+
+          <ul>
+            {features.map((feature, index) => (
+              <li key={index}>{feature}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       <button
-       style={{
+        style={{
           width: "70%",
           margin: "20px auto",
           padding: "16px 32px",
           display: "inline-block",
           alignItems: "center",
-          fontFmily: "Franklin Gothic Medium, Arial Narrow",
+          fontFamily: "Franklin Gothic Medium, Arial Narrow",
           fontWeight: 700,
           fontSize: "1.5rem",
           borderRadius: "12px",
@@ -76,10 +133,9 @@ description
             "inset 0 0 16px 8px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.9)",
         }}
         type="button"
-      >Додати до кошику</button>
+      >
+        Додати до кошику
+      </button>
     </>
   );
-};
-
-
-
+}

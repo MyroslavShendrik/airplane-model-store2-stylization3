@@ -29,19 +29,21 @@ export default function CardList({ items }) {
           }}
           key={item.id}
         >
-          <CardItem
-            name={item.name}
-            image={item.image}
-            category={item.category}
-            productType={item.productType}
-            age={item.age}
-            gender={item.gender}
-            showMovie={item.showMovie}
-            character={item.character}
-            year={item.year}
-            price={item.price}
-            discription={item.discription}
-          />
+<CardItem
+  name={item.name}
+  image={item.image}
+  category={item.category}
+  productType={item.productType}
+  age={item.age}
+  gender={item.gender}
+  showMovie={item.showMovie}
+  character={item.character}
+  year={item.year}
+  price={item.price}
+  discription={item.discription}
+  interestingInfo={item.interestingInfo}
+  features={item.features}
+/>
         </li>
       ))}
     </ul>

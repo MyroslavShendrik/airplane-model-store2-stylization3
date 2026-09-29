@@ -1,209 +1,352 @@
- [
-    {
-      "id": "001",
-      "type": "toy",
-      "category": "Іграшки",
-      "image": "/star-wars-shop/images/millennium-falcon.jpg",
-      "name": "LEGO Millennium Falcon",
-      "discription": "Конструктор LEGO із культовим космічним кораблем Millennium Falcon.",
-      "price": 7999,
-      "year": 2024,
-      "gender": "unisex",
-      "age": "9+",
-      "productType": "Lego",
-      "showMovie": "Star Wars: Episode IV - A New Hope",
-      "character": "Han Solo"
+[
+  {
+    "id": "001",
+    "type": "toy",
+    "category": "Іграшки",
+    "image": {
+      "real": "/star-wars-shop/images/real/millennium-falcon-real.jpg",
+      "toy": "/star-wars-shop/images/toys/millennium-falcon.jpg",
+      "additional": "/star-wars-shop/images/toys/millennium-falcon-detail.jpg"
     },
+    "name": "LEGO Millennium Falcon",
+    "discription": "Конструктор LEGO із культовим космічним кораблем Millennium Falcon. Після складання модель можна використовувати як для гри, так і для колекції.",
+    "interestingInfo": "Millennium Falcon є одним із найвідоміших кораблів Star Wars. Саме на ньому Хан Соло та Чубакка брали участь у багатьох важливих подіях галактичної історії.",
+    "features": [
+      "Деталізована модель корабля",
+      "Рухомі елементи",
+      "Кабіна пілотів",
+      "Підходить для колекціонування"
+    ],
+    "price": 7999,
+    "year": 2024,
+    "gender": "unisex",
+    "age": "9+",
+    "productType": "Lego",
+    "showMovie": "Star Wars: Episode IV - A New Hope",
+    "character": "Han Solo"
+  },
 
-    {
-      "id": "002",
-      "type": "toy",
-      "category": "Іграшки",
-      "image": "/star-wars-shop/images/darth-vader.jpg",
-      "name": "Darth Vader Action Figure",
-      "discription": "Деталізована фігурка Дарта Вейдера з рухомими частинами тіла.",
-      "price": 1499,
-      "year": 2023,
-      "gender": "unisex",
-      "age": "4+",
-      "productType": "Action Figures",
-      "showMovie": "Star Wars: Episode V - The Empire Strikes Back",
-      "character": "Darth Vader"
+  {
+    "id": "002",
+    "type": "toy",
+    "category": "Іграшки",
+    "image": {
+      "real": "/star-wars-shop/images/real/darth-vader-real.jpg",
+      "toy": "/star-wars-shop/images/toys/darth-vader.jpg",
+      "additional": "/star-wars-shop/images/toys/darth-vader-detail.jpg"
     },
+    "name": "Darth Vader Action Figure",
+    "discription": "Деталізована фігурка Дарта Вейдера з рухомими частинами тіла, характерною бронею та світловим мечем.",
+    "interestingInfo": "Дарт Вейдер — один із найвідоміших персонажів Star Wars. До свого переходу на темну сторону він був джедаєм Енакіном Скайвокером.",
+    "features": [
+      "Рухомі руки та ноги",
+      "Деталізована броня",
+      "Світловий меч",
+      "Підходить для колекції"
+    ],
+    "price": 1499,
+    "year": 2023,
+    "gender": "unisex",
+    "age": "4+",
+    "productType": "Action Figures",
+    "showMovie": "Star Wars: Episode V - The Empire Strikes Back",
+    "character": "Darth Vader"
+  },
 
-    {
-      "id": "003",
-      "type": "toy",
-      "category": "Іграшки",
-      "image_": "/images/toys/luke-lightsaber.jpg",
-      "name": "Luke Skywalker Lightsaber",
-      "discription": "Іграшковий світловий меч Люка Скайвокера зі світловими та звуковими ефектами.",
-      "price": 2199,
-      "year": 2024,
-      "gender": "unisex",
-      "age": "6+",
-      "productType": "lightsaber toys",
-      "showMovie": "Star Wars: Episode VI - Return of the Jedi",
-      "character": "Luke Skywalker"
+  {
+    "id": "003",
+    "type": "toy",
+    "category": "Іграшки",
+    "image": {
+      "real": "/star-wars-shop/images/real/luke-skywalker-real.jpg",
+      "toy": "/star-wars-shop/images/toys/luke-lightsaber.jpg",
+      "additional": "/star-wars-shop/images/toys/luke-lightsaber-detail.jpg"
     },
+    "name": "Luke Skywalker Lightsaber",
+    "discription": "Іграшковий світловий меч Люка Скайвокера зі світловими та звуковими ефектами.",
+    "interestingInfo": "Люк Скайвокер створив власний зелений світловий меч після втрати блакитного меча. Цей меч вперше з'явився у фільмі Return of the Jedi.",
+    "features": [
+      "Світлові ефекти",
+      "Звуки ударів",
+      "Звук активації",
+      "Деталізована рукоять"
+    ],
+    "price": 2199,
+    "year": 2024,
+    "gender": "unisex",
+    "age": "6+",
+    "productType": "lightsaber toys",
+    "showMovie": "Star Wars: Episode VI - Return of the Jedi",
+    "character": "Luke Skywalker"
+  },
 
-    {
-      "id": "004",
-      "type": "toy",
-      "category": "Іграшки",
-      "image_": "/images/toys/x-wing.jpg",
-      "name": "X-Wing Starfighter",
-      "discription": "Модель легендарного винищувача X-Wing сил Повстанців.",
-      "price": 1899,
-      "year": 2022,
-      "gender": "unisex",
-      "age": "5+",
-      "productType": "cars,Trains, & RS Toys",
-      "showMovie": "Star Wars: Episode IV - A New Hope",
-      "character": "Rebel Alliance"
+  {
+    "id": "004",
+    "type": "toy",
+    "category": "Іграшки",
+    "image": {
+      "real": "/star-wars-shop/images/real/x-wing-real.jpg",
+      "toy": "/star-wars-shop/images/toys/x-wing.jpg",
+      "additional": "/star-wars-shop/images/toys/x-wing-detail.jpg"
     },
+    "name": "X-Wing Starfighter",
+    "discription": "Модель легендарного винищувача X-Wing, який використовувався силами Повстанців у боротьбі проти Галактичної Імперії.",
+    "interestingInfo": "X-Wing став одним із символів Повстання. Люк Скайвокер використовував X-Wing під час атаки на першу Зірку Смерті.",
+    "features": [
+      "Рухомі крила",
+      "Деталізований корпус",
+      "Імітація лазерних гармат",
+      "Компактний розмір"
+    ],
+    "price": 1899,
+    "year": 2022,
+    "gender": "unisex",
+    "age": "5+",
+    "productType": "cars,Trains, & RS Toys",
+    "showMovie": "Star Wars: Episode IV - A New Hope",
+    "character": "Rebel Alliance"
+  },
 
-    {
-      "id": "005",
-      "type": "toy",
-      "category": "Іграшки",
-      "image_": "/images/toys/obi-wan.jpg",
-      "name": "Obi-Wan Kenobi Action Figure",
-      "discription": "Фігурка майстра-джедая Обі-Вана Кенобі зі світловим мечем.",
-      "price": 1299,
-      "year": 2023,
-      "gender": "unisex",
-      "age": "4+",
-      "productType": "Action Figures",
-      "showMovie": "Star Wars: Episode III - Revenge of the Sith",
-      "character": "Obi-Wan Kenobi"
+  {
+    "id": "005",
+    "type": "toy",
+    "category": "Іграшки",
+    "image": {
+      "real": "/star-wars-shop/images/real/obi-wan-real.jpg",
+      "toy": "/star-wars-shop/images/toys/obi-wan.jpg",
+      "additional": "/star-wars-shop/images/toys/obi-wan-detail.jpg"
     },
+    "name": "Obi-Wan Kenobi Action Figure",
+    "discription": "Фігурка майстра-джедая Обі-Вана Кенобі зі світловим мечем та рухомими частинами тіла.",
+    "interestingInfo": "Обі-Ван був учнем Квай-Гона Джинна та наставником Енакіна Скайвокера. Він пережив Наказ 66 і продовжив захищати галактику.",
+    "features": [
+      "Рухомі кінцівки",
+      "Світловий меч",
+      "Деталізований костюм",
+      "Можливість змінювати пози"
+    ],
+    "price": 1299,
+    "year": 2023,
+    "gender": "unisex",
+    "age": "4+",
+    "productType": "Action Figures",
+    "showMovie": "Star Wars: Episode III - Revenge of the Sith",
+    "character": "Obi-Wan Kenobi"
+  },
 
-    {
-      "id": "006",
-      "type": "book",
-      "category": "Комікси/книги",
-      "image_": "/images/books/thrawn.jpg",
-      "name": "Thrawn",
-      "discription": "Книга про одного з найвідоміших стратегів Галактичної Імперії — гранд-адмірала Трауна.",
-      "price": 499,
-      "year": 2017,
-      "gender": "unisex",
-      "age": "12+",
-      "productType": "Book",
-      "showMovie": "Star Wars",
-      "character": "Grand Admiral Thrawn"
+  {
+    "id": "006",
+    "type": "book",
+    "category": "Комікси/книги",
+    "image": {
+      "real": "/star-wars-shop/images/real/thrawn-real.jpg",
+      "product": "/star-wars-shop/images/books/thrawn.jpg",
+      "additional": "/star-wars-shop/images/books/thrawn-cover.jpg"
     },
+    "name": "Thrawn",
+    "discription": "Книга про одного з найвідоміших стратегів Галактичної Імперії — гранд-адмірала Трауна.",
+    "interestingInfo": "Траун відомий своїм нестандартним підходом до військової стратегії та здатністю аналізувати культуру своїх супротивників.",
+    "features": [
+      "Оригінальна історія",
+      "Розвиток персонажа Трауна",
+      "Військова стратегія",
+      "Всесвіт Star Wars"
+    ],
+    "price": 499,
+    "year": 2017,
+    "gender": "unisex",
+    "age": "12+",
+    "productType": "Book",
+    "showMovie": "Star Wars",
+    "character": "Grand Admiral Thrawn"
+  },
 
-    {
-      "id": "007",
-      "type": "book",
-      "category": "Комікси/книги",
-      "image_": "/images/books/darth-vader-comic.jpg",
-      "name": "Darth Vader Comic",
-      "discription": "Комікс про Дарта Вейдера та його пригоди після падіння Галактичної Республіки.",
-      "price": 349,
-      "year": 2020,
-      "gender": "unisex",
-      "age": "12+",
-      "productType": "Comic",
-      "showMovie": "Star Wars",
-      "character": "Darth Vader"
+  {
+    "id": "007",
+    "type": "book",
+    "category": "Комікси/книги",
+    "image": {
+      "real": "/star-wars-shop/images/real/darth-vader-real.jpg",
+      "product": "/star-wars-shop/images/books/darth-vader-comic.jpg",
+      "additional": "/star-wars-shop/images/books/darth-vader-comic-detail.jpg"
     },
+    "name": "Darth Vader Comic",
+    "discription": "Комікс про Дарта Вейдера та події, що відбуваються після падіння Галактичної Республіки.",
+    "interestingInfo": "Комікси про Дарта Вейдера дозволяють побачити події між фільмами та дізнатися більше про життя персонажа після становлення ситхом.",
+    "features": [
+      "Комікс Star Wars",
+      "Історія Дарта Вейдера",
+      "Оригінальні ілюстрації",
+      "Колекційне видання"
+    ],
+    "price": 349,
+    "year": 2020,
+    "gender": "unisex",
+    "age": "12+",
+    "productType": "Comic",
+    "showMovie": "Star Wars",
+    "character": "Darth Vader"
+  },
 
-    {
-      "id": "008",
-      "type": "book",
-      "category": "Комікси/книги",
-      "image_": "/images/books/high-republic.jpg",
-      "name": "The High Republic",
-      "discription": "Книга, що розповідає про події часів розквіту Ордену джедаїв.",
-      "price": 449,
-      "year": 2021,
-      "gender": "unisex",
-      "age": "12+",
-      "productType": "Book",
-      "showMovie": "Star Wars: The High Republic",
-      "character": "Jedi Order"
+  {
+    "id": "008",
+    "type": "book",
+    "category": "Комікси/книги",
+    "image": {
+      "real": "/star-wars-shop/images/real/jedi-real.jpg",
+      "product": "/star-wars-shop/images/books/high-republic.jpg",
+      "additional": "/star-wars-shop/images/books/high-republic-detail.jpg"
     },
+    "name": "The High Republic",
+    "discription": "Книга, що розповідає про події часів розквіту Ордену джедаїв та Галактичної Республіки.",
+    "interestingInfo": "Епоха High Republic відбувається за багато років до подій основної кіносаги та показує Орден джедаїв у період його найбільшого розвитку.",
+    "features": [
+      "Епоха High Republic",
+      "Нові персонажі",
+      "Історія джедаїв",
+      "Розширення всесвіту Star Wars"
+    ],
+    "price": 449,
+    "year": 2021,
+    "gender": "unisex",
+    "age": "12+",
+    "productType": "Book",
+    "showMovie": "Star Wars: The High Republic",
+    "character": "Jedi Order"
+  },
 
-    {
-      "id": "009",
-      "type": "merch",
-      "category": "Костюми/мерч",
-      "image_": "/images/merch/mandalorian-helmet.jpg",
-      "name": "Mandalorian Helmet",
-      "discription": "Декоративний шолом у стилі мандалорців із всесвіту Star Wars.",
-      "price": 2999,
-      "year": 2024,
-      "gender": "unisex",
-      "age": "14+",
-      "productType": "Helmet",
-      "showMovie": "The Mandalorian",
-      "character": "The Mandalorian"
+  {
+    "id": "009",
+    "type": "merch",
+    "category": "Костюми/мерч",
+    "image": {
+      "real": "/star-wars-shop/images/real/mandalorian-real.jpg",
+      "product": "/star-wars-shop/images/merch/mandalorian-helmet.jpg",
+      "additional": "/star-wars-shop/images/merch/mandalorian-helmet-detail.jpg"
     },
+    "name": "Mandalorian Helmet",
+    "discription": "Декоративний шолом у стилі мандалорців із всесвіту Star Wars.",
+    "interestingInfo": "Мандалорський шолом є одним із головних елементів обладунку мандалорців та впізнаваною частиною їхньої культури.",
+    "features": [
+      "Деталізований дизайн",
+      "Колекційний предмет",
+      "Мандалорський стиль",
+      "Підходить для косплею"
+    ],
+    "price": 2999,
+    "year": 2024,
+    "gender": "unisex",
+    "age": "14+",
+    "productType": "Helmet",
+    "showMovie": "The Mandalorian",
+    "character": "The Mandalorian"
+  },
 
-    {
-      "id": "010",
-      "type": "merch",
-      "category": "Костюми/мерч",
-      "image_": "/images/merch/jedi-robe.jpg",
-      "name": "Jedi Robe",
-      "discription": "Костюм джедая з коричневою мантією та поясом.",
-      "price": 1799,
-      "year": 2023,
-      "gender": "unisex",
-      "age": "14+",
-      "productType": "Costume",
-      "showMovie": "Star Wars: Episode III - Revenge of the Sith",
-      "character": "Jedi Order"
+  {
+    "id": "010",
+    "type": "merch",
+    "category": "Костюми/мерч",
+    "image": {
+      "real": "/star-wars-shop/images/real/jedi-real.jpg",
+      "product": "/star-wars-shop/images/merch/jedi-robe.jpg",
+      "additional": "/star-wars-shop/images/merch/jedi-robe-detail.jpg"
     },
+    "name": "Jedi Robe",
+    "discription": "Костюм джедая з коричневою мантією та поясом, створений за мотивами одягу джедаїв.",
+    "interestingInfo": "Мантії та туніки є характерною частиною одягу багатьох джедаїв у Star Wars.",
+    "features": [
+      "Коричнева мантія",
+      "Пояс",
+      "Стиль джедаїв",
+      "Підходить для косплею"
+    ],
+    "price": 1799,
+    "year": 2023,
+    "gender": "unisex",
+    "age": "14+",
+    "productType": "Costume",
+    "showMovie": "Star Wars: Episode III - Revenge of the Sith",
+    "character": "Jedi Order"
+  },
 
-    {
-      "id": "011",
-      "type": "merch",
-      "category": "Костюми/мерч",
-      "image_": "/images/merch/star-wars-tshirt.jpg",
-      "name": "Star Wars T-Shirt",
-      "discription": "Футболка з класичним логотипом Star Wars.",
-      "price": 799,
-      "year": 2025,
-      "gender": "unisex",
-      "age": "14+",
-      "productType": "Clothing",
-      "showMovie": "Star Wars",
-      "character": "Star Wars"
+  {
+    "id": "011",
+    "type": "merch",
+    "category": "Костюми/мерч",
+    "image": {
+      "real": "/star-wars-shop/images/real/star-wars-logo.jpg",
+      "product": "/star-wars-shop/images/merch/star-wars-tshirt.jpg",
+      "additional": "/star-wars-shop/images/merch/star-wars-tshirt-detail.jpg"
     },
+    "name": "Star Wars T-Shirt",
+    "discription": "Футболка з класичним логотипом Star Wars для повсякденного носіння.",
+    "interestingInfo": "Логотип Star Wars став одним із найвідоміших символів популярної культури та використовується на великій кількості офіційного мерчу.",
+    "features": [
+      "Класичний логотип",
+      "Повсякденний одяг",
+      "Фанатський мерч",
+      "Універсальний дизайн"
+    ],
+    "price": 799,
+    "year": 2025,
+    "gender": "unisex",
+    "age": "14+",
+    "productType": "Clothing",
+    "showMovie": "Star Wars",
+    "character": "Star Wars"
+  },
 
-    {
-      "id": "012",
-      "type": "ticket",
-      "category": "Квитки/події",
-      "image_": "/images/events/disneyland.jpg",
-      "name": "Star Wars: Galaxy's Edge",
-      "discription": "Квиток до тематичної зони Star Wars: Galaxy's Edge у Disneyland.",
-      "price": 5999,
-      "year": 2026,
-      "gender": "unisex",
-      "age": "0+",
-      "productType": "Disneyland Ticket",
-      "showMovie": "Star Wars",
-      "character": "Star Wars"
+  {
+    "id": "012",
+    "type": "ticket",
+    "category": "Квитки/події",
+    "image": {
+      "real": "/star-wars-shop/images/real/galaxys-edge-real.jpg",
+      "product": "/star-wars-shop/images/events/disneyland.jpg",
+      "additional": "/star-wars-shop/images/events/galaxys-edge-detail.jpg"
     },
+    "name": "Star Wars: Galaxy's Edge",
+    "discription": "Квиток до тематичної зони Star Wars: Galaxy's Edge у Disneyland.",
+    "interestingInfo": "Galaxy's Edge створена як окрема частина всесвіту Star Wars, де відвідувачі можуть досліджувати планету Batuu.",
+    "features": [
+      "Тематична зона Star Wars",
+      "Batuu",
+      "Атмосфера всесвіту Star Wars",
+      "Розваги для фанатів"
+    ],
+    "price": 5999,
+    "year": 2026,
+    "gender": "unisex",
+    "age": "0+",
+    "productType": "Disneyland Ticket",
+    "showMovie": "Star Wars",
+    "character": "Star Wars"
+  },
 
-    {
-      "id": "013",
-      "type": "ticket",
-      "category": "Квитки/події",
-      "image_": "/images/events/star-wars-night.jpg",
-      "name": "Star Wars Night",
-      "discription": "Квиток на тематичну подію Star Wars із спеціальними активностями та декораціями.",
-      "price": 2499,
-      "year": 2026,
-      "gender": "unisex",
-      "age": "6+",
-      "productType": "Event Ticket",
-      "showMovie": "Star Wars",
-      "character": "Star Wars"
-    }
-  ]
+  {
+    "id": "013",
+    "type": "ticket",
+    "category": "Квитки/події",
+    "image": {
+      "real": "/star-wars-shop/images/real/star-wars-event-real.jpg",
+      "product": "/star-wars-shop/images/events/star-wars-night.jpg",
+      "additional": "/star-wars-shop/images/events/star-wars-night-detail.jpg"
+    },
+    "name": "Star Wars Night",
+    "discription": "Квиток на тематичну подію Star Wars зі спеціальними активностями, декораціями та атмосферою всесвіту.",
+    "interestingInfo": "Тематичні події Star Wars дозволяють фанатам відвідати спеціальні активності та побачити улюблених персонажів у тематичному середовищі.",
+    "features": [
+      "Тематична подія",
+      "Спеціальні активності",
+      "Декорації Star Wars",
+      "Фанатська атмосфера"
+    ],
+    "price": 2499,
+    "year": 2026,
+    "gender": "unisex",
+    "age": "6+",
+    "productType": "Event Ticket",
+    "showMovie": "Star Wars",
+    "character": "Star Wars"
+  }
+]
