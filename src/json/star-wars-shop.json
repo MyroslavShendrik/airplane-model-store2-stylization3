@@ -4,7 +4,7 @@
     "type": "toy",
     "category": "Іграшки",
     "image": {
-      "real": "/star-wars-shop/images/real/millennium-falcon-real.jpg",
+      "real": "/star-wars-shop/images/millennium-falcon.jpg",
       "toy": "/star-wars-shop/images/toys/millennium-falcon.jpg",
       "additional": "/star-wars-shop/images/toys/millennium-falcon-detail.jpg"
     },
@@ -31,7 +31,7 @@
     "type": "toy",
     "category": "Іграшки",
     "image": {
-      "real": "/star-wars-shop/images/real/darth-vader-real.jpg",
+      "real": "/star-wars-shop/images/darth-vader.jpg",
       "toy": "/star-wars-shop/images/toys/darth-vader.jpg",
       "additional": "/star-wars-shop/images/toys/darth-vader-detail.jpg"
     },

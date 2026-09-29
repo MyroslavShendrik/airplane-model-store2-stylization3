@@ -1,5 +1,5 @@
 import defaultImage from "./default.jpg"; //! Дефолтне зображення
-
+console.log("default:",defaultImage)
 //! Стилі для текстових полів
 const textField = {
   fontSize: "18px",
@@ -20,7 +20,7 @@ const imageTitles = {
 
 export default function CardItem({
   name,
-  image = {},
+  image = defaultImage,
   category,
   productType,
   age,
@@ -50,13 +50,13 @@ export default function CardItem({
       </h3>
 
      <h4 style={imageTitles}>Основне зображення</h4>
-<img src={image.real || defaultImage} alt={name} />
+<img src={image.real} alt={name} />
 
 <h4 style={imageTitles}>Фото товару</h4>
-<img src={image.toy || defaultImage} alt={`${name} toy`} />
+<img src={image.toy} alt={`${name} toy`} />
 
 <h4 style={imageTitles}>Додаткове зображення</h4>
-<img src={image.additional || defaultImage} alt={`${name} additional`} />
+<img src={image.additional} alt={`${name} additional`} />
 
       <p style={textField}>
         Категорія: <span style={textFieldValue}>{category}</span>
