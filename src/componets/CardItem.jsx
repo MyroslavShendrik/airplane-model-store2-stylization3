@@ -1,5 +1,8 @@
+
 import defaultImage from "./default.jpg"; //! Дефолтне зображення
-console.log("default:",defaultImage)
+
+console.log("default:", defaultImage);
+
 //! Стилі для текстових полів
 const textField = {
   fontSize: "18px",
@@ -20,7 +23,7 @@ const imageTitles = {
 
 export default function CardItem({
   name,
-  image = defaultImage,
+  image = {},
   category,
   productType,
   age,
@@ -33,6 +36,12 @@ export default function CardItem({
   interestingInfo,
   features,
 }) {
+  //! Якщо зображення не завантажилося — показуємо default.jpg
+  const handleImageError = (event) => {
+    event.currentTarget.onerror = null;
+    event.currentTarget.src = defaultImage;
+  };
+
   return (
     <>
       <h3
@@ -49,14 +58,26 @@ export default function CardItem({
         {name}
       </h3>
 
-     <h4 style={imageTitles}>Основне зображення</h4>
-<img src={image.real} alt={name} />
+      <h4 style={imageTitles}>Основне зображення</h4>
+      <img
+        src={image?.real || defaultImage}
+        alt={`${name} — основне зображення`}
+        onError={handleImageError}
+      />
 
-<h4 style={imageTitles}>Фото товару</h4>
-<img src={image.toy} alt={`${name} toy`} />
+      <h4 style={imageTitles}>Фото товару</h4>
+      <img
+        src={image?.toy || defaultImage}
+        alt={`${name} — фото товару`}
+        onError={handleImageError}
+      />
 
-<h4 style={imageTitles}>Додаткове зображення</h4>
-<img src={image.additional} alt={`${name} additional`} />
+      <h4 style={imageTitles}>Додаткове зображення</h4>
+      <img
+        src={image?.additional || defaultImage}
+        alt={`${name} — додаткове фото`}
+        onError={handleImageError}
+      />
 
       <p style={textField}>
         Категорія: <span style={textFieldValue}>{category}</span>
@@ -96,15 +117,13 @@ export default function CardItem({
 
       {interestingInfo && (
         <p style={textField}>
-          Цікаво:{" "}
-          <span style={textFieldValue}>{interestingInfo}</span>
+          Цікаво: <span style={textFieldValue}>{interestingInfo}</span>
         </p>
       )}
 
       {features && (
         <div>
           <p style={textField}>Особливості:</p>
-
           <ul>
             {features.map((feature, index) => (
               <li key={index}>{feature}</li>
