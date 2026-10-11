@@ -102,6 +102,8 @@ function PlanesList({ items }) {
             type={item.info.type}
             price={item.info.price}
             description={item.info.description}
+            startData={item.manufacturing.start}
+            endData={item.manufacturing.end}
           />
         </li>
       ))}

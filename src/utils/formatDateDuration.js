@@ -1,5 +1,7 @@
-export function getManufacturingYears(start, end) {
-  let numberYears = 10
+import { differenceInYears, parseISO } from 'date-fns';
 
-  return numberYears
+export function getManufacturingYears(start, end) {
+ const startDate = typeof start === 'string' ? parseISO(start) : start;
+  const endDate = typeof end === 'string' ? parseISO(end) : end;
+  return differenceInYears(endDate, startDate);
 };

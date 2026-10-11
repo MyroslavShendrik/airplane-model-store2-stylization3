@@ -85,6 +85,8 @@ export default function PlaneItem({
   type,
   price,
   description,
+  startData,
+  endData
 }) {
   return (
     <>
@@ -150,7 +152,7 @@ export default function PlaneItem({
         // className="textField"
         className={css.textField}
       >
-        <TbClockHour4Filled size={iconSize.md} className={css.icon} /> Тривалість виробництва (в роках): <span className={css.textFieldValue}>{getManufacturingYears(1,2)}</span>
+        <TbClockHour4Filled size={iconSize.md} className={css.icon} /> Тривалість виробництва (в роках): <span className={css.textFieldValue}>{getManufacturingYears(startData,endData)}</span>
       </p>
       <p
         // className="textField"
