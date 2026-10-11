@@ -21,7 +21,7 @@
   background-color: #d2fdbd;
 }
 
-.current{
+.current {
   composes:planesItem;
   background-color: #d6f1ff;
 }
