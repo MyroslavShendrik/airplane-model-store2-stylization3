@@ -9,7 +9,8 @@ export default defineConfig({
   //! Налаштування Аліасів для абсолютних шляхів імпортів
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
+      // '@': path.resolve(__dirname, 'src'),
+      '@': path.resolve(import.meta.dirname, 'src'),
     },
   },
 });
