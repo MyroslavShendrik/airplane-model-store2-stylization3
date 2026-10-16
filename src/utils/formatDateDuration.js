@@ -1,18 +1,14 @@
-import { differenceInYears, parseISO } from 'date-fns';
+import { differenceInYears, parseISO } from "date-fns";
 
 export function getManufacturingYears(start, end) {
-  const startDate = typeof start === 'string' ? parseISO(start) : start;
+  const startDate = parseISO(start);
 
-  const endDate =
-    end === 'now'
-      ? new Date()
-      : typeof end === 'string'
-        ? parseISO(end)
-        : end;
-
+  const endDate =( end === "now") ? new Date() : parseISO(end);
+ 
   const years = differenceInYears(endDate, startDate);
-console.log('start:', start);
-console.log('end:', end);
-console.log('years:', years);
-return end === 'now' ? `${years}+` : years;
+
+  console.log("start:", start);
+  console.log("end:", end);
+  console.log("years:", years);
+  return end === "now" ? `${years}+` : years;
 }
