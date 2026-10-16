@@ -7,7 +7,8 @@ import {
   getBgColorBuiltInStyles,
   getBgColorVanillaCSS,
   getBgColorCSSModule,
-} from "@/utils/getBackgroundColor.js";
+} from "@/utils";
+// "@/utils/getBackgroundColor.js"
 // "../../utils/getBackgroundColor.js";
 import clsx from "clsx";
 // import './PlanesList.css'

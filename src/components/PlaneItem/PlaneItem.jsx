@@ -38,11 +38,14 @@ import { ImAirplane } from "react-icons/im";
 //? <CiAirportSign1 /> - Реальна модель
 
 //! Константи для розмірів іконок
-import { iconSize } from "@/constants/iconSize.js";
+// import { iconSize } from "@/constants/iconSize.js";
+import { iconSize } from "@/constants";
+
 // iconSize.md = 56;
 console.log("iconSize:", iconSize);
 
-import {getManufacturingYears} from "@/utils/formatDateDuration.js"
+// import {getManufacturingYears} from "@/utils/formatDateDuration.js"
+import {getManufacturingYears} from "@/utils"
 
 import css from "./PlaneItem.module.css";
 
