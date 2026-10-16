@@ -243,4 +243,6 @@ PlaneItem.propTypes = {
   price: PropTypes.string.isRequired,
   // price: PropTypes.number.isRequired,  //! контроль propTypes
   description: PropTypes.string.isRequired,
+  startData: PropTypes.string.isRequired,
+  endData: PropTypes.string.isRequired,
 };
