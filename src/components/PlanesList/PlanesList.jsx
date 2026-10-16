@@ -1,12 +1,14 @@
 import PropTypes from "prop-types";
 // import PlaneItem from "./PlaneItemBuiltInStyles.jsx"; //! вбудовані стилі
-import PlaneItem from "../PlaneItem/PlaneItem.jsx"; //! ванільний CSS
+// import PlaneItem from "../PlaneItem/PlaneItem.jsx"; //! ванільний CSS
+import PlaneItem from "@/components/PlaneItem/PlaneItem.jsx"; //! ванільний CSS
 // import {color} from "../utils/getBackgroundColor.js"
 import {
   getBgColorBuiltInStyles,
   getBgColorVanillaCSS,
   getBgColorCSSModule,
-} from "../../utils/getBackgroundColor.js";
+} from "@/utils/getBackgroundColor.js";
+// "../../utils/getBackgroundColor.js";
 import clsx from "clsx";
 // import './PlanesList.css'
 import css from "./PlanesList.module.css";
