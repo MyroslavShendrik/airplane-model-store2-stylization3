@@ -1,4 +1,4 @@
-import CardItem from "./CardItem.jsx"; //! без стилізації
+import CardItem from "@/componets/CardItem/CardItem.jsx"; //! без стилізації
 
 export default function CardList({ items }) {
   console.log("items:", items);
