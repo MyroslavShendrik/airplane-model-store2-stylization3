@@ -5,9 +5,9 @@
     "type": "toy",
     "category": "Іграшки",
     "image": {
-      "real": "/images/millennium-falcon-real.jpg",
-      "toy": "/images/millennium-falcon.jpg",
-      "additional": "/images/millennium-falcon-detail.jpg"
+      "real": "/star-wars-shop/images/millennium-falcon-real.jpg",
+      "toy": "/star-wars-shop/images/millennium-falcon.jpg",
+      "additional": "/star-wars-shop/images/millennium-falcon-detail.jpg"
     },
     "name": "LEGO Millennium Falcon",
     "discription": "Конструктор LEGO для складання легендарного корабля «Тисячолітній сокіл».",
@@ -26,9 +26,9 @@
     "type": "toy",
     "category": "Іграшки",
     "image": {
-      "real": "/images/darth-vader-real.jpg",
-      "toy": "/images/darth-vader.jpg",
-      "additional": "/images/darth-vader-detail.jpg"
+      "real": "/star-wars-shop/images/darth-vader-real.jpg",
+      "toy": "/star-wars-shop/images/darth-vader.jpg",
+      "additional": "/star-wars-shop/images/darth-vader-detail.jpg"
     },
     "name": "Darth Vader Action Figure",
     "discription": "Колекційна фігурка Дарта Вейдера в чорному обладунку.",
