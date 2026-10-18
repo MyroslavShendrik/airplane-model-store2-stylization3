@@ -1,4 +1,3 @@
-
 [
   {
     "id": "001",
@@ -7,12 +6,21 @@
     "image": {
       "real": "/star-wars-shop/images/millennium-falcon-real.jpg",
       "toy": "/star-wars-shop/images/millennium-falcon.jpg",
-      "additional": "/star-wars-shop/images/millennium-falcon-detail.jpg"
+      "additional": [
+        "/star-wars-shop/images/millennium-falcon-detail-1.jpg",
+        "/star-wars-shop/images/millennium-falcon-detail-2.jpg",
+        "/star-wars-shop/images/millennium-falcon-detail-3.jpg",
+        "/star-wars-shop/images/millennium-falcon-detail-4.jpg"
+      ]
     },
     "name": "LEGO Millennium Falcon",
     "discription": "Конструктор LEGO для складання легендарного корабля «Тисячолітній сокіл».",
     "interestingInfo": "«Тисячолітній сокіл» належить Гану Соло та Чубаці й відомий своєю неймовірною швидкістю.",
-    "features": ["Великий конструктор", "Рухомі елементи", "Деталізована кабіна"],
+    "features": [
+      "Великий конструктор",
+      "Рухомі елементи",
+      "Деталізована кабіна"
+    ],
     "price": 7999,
     "year": 2024,
     "gender": "Унісекс",
@@ -28,12 +36,21 @@
     "image": {
       "real": "/star-wars-shop/images/darth-vader-real.jpg",
       "toy": "/star-wars-shop/images/darth-vader.jpg",
-      "additional": "/star-wars-shop/images/darth-vader-detail.jpg"
+      "additional": [
+        "/star-wars-shop/images/darth-vader-detail-1.jpg",
+        "/star-wars-shop/images/darth-vader-detail-2.jpg",
+        "/star-wars-shop/images/darth-vader-detail-3.jpg",
+        "/star-wars-shop/images/darth-vader-detail-4.jpg"
+      ]
     },
     "name": "Darth Vader Action Figure",
     "discription": "Колекційна фігурка Дарта Вейдера в чорному обладунку.",
     "interestingInfo": "Дарт Вейдер — це Енакін Скайвокер, колишній лицар-джедай, який перейшов на темний бік Сили.",
-    "features": ["Рухомі кінцівки", "Чорний обладунок", "Червоний світловий меч"],
+    "features": [
+      "Рухомі кінцівки",
+      "Чорний обладунок",
+      "Червоний світловий меч"
+    ],
     "price": 1299,
     "year": 2024,
     "gender": "Унісекс",
@@ -49,7 +66,12 @@
     "image": {
       "real": "/images/luke-skywalker-real.jpg",
       "toy": "/images/luke-lightsaber.jpg",
-      "additional": "/images/luke-lightsaber-detail.jpg"
+      "additional": [
+        "/images/luke-lightsaber-detail.jpg",
+        "/images/luke-lightsaber-detail.jpg",
+        "/images/luke-lightsaber-detail.jpg",
+        "/images/luke-lightsaber-detail.jpg"
+      ]
     },
     "name": "Luke Skywalker Lightsaber",
     "discription": "Іграшковий світловий меч Люка Скайвокера.",
@@ -70,12 +92,21 @@
     "image": {
       "real": "/images/x-wing-real.jpg",
       "toy": "/images/x-wing.jpg",
-      "additional": "/images/x-wing-detail.jpg"
+      "additional": [
+        "/images/x-wing-detail.jpg",
+        "/images/x-wing-detail.jpg",
+        "/images/x-wing-detail.jpg",
+        "/images/x-wing-detail.jpg"
+      ]
     },
     "name": "X-Wing Starfighter",
     "discription": "Модель винищувача X-wing, який використовує Альянс повстанців.",
     "interestingInfo": "Люк Скайвокер керував X-wing під час атаки на Зірку Смерті.",
-    "features": ["Відкривні крила", "Деталізований корпус", "Підставка для моделі"],
+    "features": [
+      "Відкривні крила",
+      "Деталізований корпус",
+      "Підставка для моделі"
+    ],
     "price": 2199,
     "year": 2024,
     "gender": "Унісекс",
@@ -91,7 +122,12 @@
     "image": {
       "real": "/images/obi-wan-real.jpg",
       "toy": "/images/obi-wan.jpg",
-      "additional": "/images/obi-wan-detail.jpg"
+      "additional": [
+        "/images/obi-wan-detail.jpg",
+        "/images/obi-wan-detail.jpg",
+        "/images/obi-wan-detail.jpg",
+        "/images/obi-wan-detail.jpg"
+      ]
     },
     "name": "Obi-Wan Kenobi Action Figure",
     "discription": "Фігурка майстра-джедая Обі-Вана Кенобі.",
@@ -112,12 +148,21 @@
     "image": {
       "real": "/images/thrawn-real.jpg",
       "product": "/images/thrawn.jpg",
-      "additional": "/images/thrawn-cover.jpg"
+      "additional": [
+        "/images/thrawn-cover.jpg",
+        "/images/thrawn-cover.jpg",
+        "/images/thrawn-cover.jpg",
+        "/images/thrawn-cover.jpg"
+      ]
     },
     "name": "Thrawn",
     "discription": "Книга про гранд-адмірала Трауна та його шлях у Галактичній імперії.",
     "interestingInfo": "Траун відомий стратегічним мисленням і вмінням аналізувати культуру ворогів.",
-    "features": ["Наукова фантастика", "Імперські інтриги", "Стратегічні битви"],
+    "features": [
+      "Наукова фантастика",
+      "Імперські інтриги",
+      "Стратегічні битви"
+    ],
     "price": 599,
     "year": 2017,
     "gender": "Унісекс",
@@ -133,12 +178,21 @@
     "image": {
       "real": "/images/darth-vader-book-real.jpg",
       "product": "/images/darth-vader-comic.jpg",
-      "additional": "/images/darth-vader-comic-detail.jpg"
+      "additional": [
+        "/images/darth-vader-comic-detail.jpg",
+        "/images/darth-vader-comic-detail.jpg",
+        "/images/darth-vader-comic-detail.jpg",
+        "/images/darth-vader-comic-detail.jpg"
+      ]
     },
     "name": "Darth Vader Comic",
     "discription": "Комікс про життя Дарта Вейдера та його місце в Імперії.",
     "interestingInfo": "Комікси показують події між фільмами та розкривають внутрішні конфлікти Вейдера.",
-    "features": ["Повноколірні ілюстрації", "Космічні пригоди", "Колекційне видання"],
+    "features": [
+      "Повноколірні ілюстрації",
+      "Космічні пригоди",
+      "Колекційне видання"
+    ],
     "price": 449,
     "year": 2023,
     "gender": "Унісекс",
@@ -154,12 +208,21 @@
     "image": {
       "real": "/images/high-republic-real.jpg",
       "product": "/images/high-republic.jpg",
-      "additional": "/images/high-republic-detail.jpg"
+      "additional": [
+        "/images/high-republic-detail.jpg",
+        "/images/high-republic-detail.jpg",
+        "/images/high-republic-detail.jpg",
+        "/images/high-republic-detail.jpg"
+      ]
     },
     "name": "The High Republic",
     "discription": "Книга з історіями про епоху розквіту Ордену джедаїв.",
     "interestingInfo": "Події Високої Республіки відбуваються за кілька століть до саги про Скайвокерів.",
-    "features": ["Нові герої", "Джедаї та дослідники", "Пригоди в далекій Галактиці"],
+    "features": [
+      "Нові герої",
+      "Джедаї та дослідники",
+      "Пригоди в далекій Галактиці"
+    ],
     "price": 529,
     "year": 2021,
     "gender": "Унісекс",
@@ -175,12 +238,21 @@
     "image": {
       "real": "/images/mandalorian-real.jpg",
       "product": "/images/mandalorian-helmet.jpg",
-      "additional": "/images/mandalorian-helmet-detail.jpg"
+      "additional": [
+        "/images/mandalorian-helmet-detail.jpg",
+        "/images/mandalorian-helmet-detail.jpg",
+        "/images/mandalorian-helmet-detail.jpg",
+        "/images/mandalorian-helmet-detail.jpg"
+      ]
     },
     "name": "Mandalorian Helmet",
     "discription": "Колекційний шолом у стилі мандалорців.",
     "interestingInfo": "Для мандалорців шолом часто є важливою частиною культури та особистої честі.",
-    "features": ["Деталізована поверхня", "Колекційний дизайн", "Для тематичного костюма"],
+    "features": [
+      "Деталізована поверхня",
+      "Колекційний дизайн",
+      "Для тематичного костюма"
+    ],
     "price": 3499,
     "year": 2024,
     "gender": "Унісекс",
@@ -196,7 +268,12 @@
     "image": {
       "real": "/images/jedi-real.jpg",
       "product": "/images/jedi-robe.jpg",
-      "additional": "/images/jedi-robe-detail.jpg"
+      "additional": [
+        "/images/jedi-robe-detail.jpg",
+        "/images/jedi-robe-detail.jpg",
+        "/images/jedi-robe-detail.jpg",
+        "/images/jedi-robe-detail.jpg"
+      ]
     },
     "name": "Jedi Robe",
     "discription": "Мантія в стилі традиційного одягу джедаїв.",
@@ -217,12 +294,21 @@
     "image": {
       "real": "/images/star-wars-logo.jpg",
       "product": "/images/star-wars-tshirt.jpg",
-      "additional": "/images/star-wars-tshirt-detail.jpg"
+      "additional": [
+        "/images/star-wars-tshirt-detail.jpg",
+        "/images/star-wars-tshirt-detail.jpg",
+        "/images/star-wars-tshirt-detail.jpg",
+        "/images/star-wars-tshirt-detail.jpg"
+      ]
     },
     "name": "Star Wars T-Shirt",
     "discription": "Футболка з тематичним дизайном Star Wars.",
     "interestingInfo": "Логотип Star Wars став одним із найвпізнаваніших символів наукової фантастики.",
-    "features": ["Повсякденний одяг", "Тематичний принт", "Підходить для фанатів"],
+    "features": [
+      "Повсякденний одяг",
+      "Тематичний принт",
+      "Підходить для фанатів"
+    ],
     "price": 799,
     "year": 2024,
     "gender": "Унісекс",
@@ -238,12 +324,21 @@
     "image": {
       "real": "/images/galaxys-edge-real.jpg",
       "product": "/images/galaxys-edge.jpg",
-      "additional": "/images/galaxys-edge-detail.jpg"
+      "additional": [
+        "/images/galaxys-edge-detail.jpg",
+        "/images/galaxys-edge-detail.jpg",
+        "/images/galaxys-edge-detail.jpg",
+        "/images/galaxys-edge-detail.jpg"
+      ]
     },
     "name": "Star Wars: Galaxy's Edge",
     "discription": "Квиток до тематичної зони Star Wars у парку Disney.",
     "interestingInfo": "Galaxy's Edge дозволяє відвідати тематичну планету Батуу та побачити «Тисячолітній сокіл».",
-    "features": ["Тематична зона Star Wars", "Атракціони", "Інтерактивні локації"],
+    "features": [
+      "Тематична зона Star Wars",
+      "Атракціони",
+      "Інтерактивні локації"
+    ],
     "price": 5999,
     "year": 2024,
     "gender": "Унісекс",
@@ -259,7 +354,12 @@
     "image": {
       "real": "/images/star-wars-event-real.jpg",
       "product": "/images/star-wars-night.jpg",
-      "additional": "/images/star-wars-night-detail.jpg"
+      "additional": [
+        "/images/star-wars-night-detail.jpg",
+        "/images/star-wars-night-detail.jpg",
+        "/images/star-wars-night-detail.jpg",
+        "/images/star-wars-night-detail.jpg"
+      ]
     },
     "name": "Star Wars Night",
     "discription": "Квиток на тематичний захід для шанувальників Star Wars.",

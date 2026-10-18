@@ -23,7 +23,9 @@ const imageTitles = {
 
 export default function CardItem({
   name,
-  image = {},
+  imageReal = defaultImage,
+  imageAdditional = defaultImage,
+  imageToy = defaultImage,
   category,
   productType,
   age,
@@ -36,6 +38,7 @@ export default function CardItem({
   interestingInfo,
   features,
 }) {
+  console.log("imageAdditional:",imageAdditional);
   //! Якщо зображення не завантажилося — показуємо default.jpg
   const handleImageError = (event) => {
     event.currentTarget.onerror = null;
@@ -60,24 +63,50 @@ export default function CardItem({
 
       <h4 style={imageTitles}>Основне зображення</h4>
       <img
-        src={image?.real || defaultImage}
+        src={imageReal}
         alt={`${name} — основне зображення`}
         onError={handleImageError}
       />
 
       <h4 style={imageTitles}>Фото товару</h4>
       <img
-        src={image?.toy || defaultImage}
+        src={imageToy}
         alt={`${name} — фото товару`}
         onError={handleImageError}
       />
-
+      {/* <div className={css.actualImageBox}>
+        {urlActual.map((image, index) => (
+          <img
+            // style={{
+            //   maxWidth: "calc((100% - 10px) / 2)",
+            //   borderRadius: 4,
+            // }}
+            className={css.actualImage}
+            key={index}
+            src={image}
+            alt={nameBrief}
+            // width="200"
+          />
+        ))}
+      </div> */}
+       
       <h4 style={imageTitles}>Додаткове зображення</h4>
-      <img
+      <div className="additionalImageBox">
+        {imageAdditional.map((image, index) => (
+        <img
+        className="imageAdditional"
+        key={index}
+        src={image}
+        alt={`${name} — додаткове фото`}
+        onError={handleImageError}
+        />
+        ))}
+      </div>
+      {/* <img
         src={image?.additional || defaultImage}
         alt={`${name} — додаткове фото`}
         onError={handleImageError}
-      />
+      /> */}
 
       <p style={textField}>
         Категорія: <span style={textFieldValue}>{category}</span>

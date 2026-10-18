@@ -31,7 +31,9 @@ export default function CardList({ items }) {
         >
 <CardItem
   name={item.name}
-  image={item.image}
+  imageReal={item.image.real}
+  imageAdditional={item.image.additional}
+  imageToy={item.image.toy}
   category={item.category}
   productType={item.productType}
   age={item.age}
