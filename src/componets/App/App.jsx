@@ -1,5 +1,6 @@
-import Section from '@/componets/Section/Section.jsx'; //! вбудовані стилі
-import CardsList from '@/componets/cardList/CardList.jsx';  //! вбудовані стилі
+// import Section from '@/componets/Section/Section.jsx'; //! вбудовані стилі
+import {Section} from '@/componets/Section/Section.jsx'; //! вбудовані стилі
+import CardsList from '@/componets/CardList/CardList.jsx';  //! вбудовані стилі
 import cards from '@/json/star-wars-shop.json';
 //  import './App.css'
 
