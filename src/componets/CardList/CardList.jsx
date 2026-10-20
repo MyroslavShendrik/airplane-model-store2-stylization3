@@ -49,6 +49,7 @@ export default function CardList({ items }) {
   discription={item.discription}
   interestingInfo={item.interestingInfo}
   features={item.features}
+  wikipedia={item.wikipedia}
 />
         </li>
       ))}

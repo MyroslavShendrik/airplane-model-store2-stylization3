@@ -37,6 +37,7 @@ export default function CardItem({
   discription,
   interestingInfo,
   features,
+  wikipedia
 }) {
   console.log("imageAdditional:",imageAdditional);
   //! Якщо зображення не завантажилося — показуємо default.jpg
@@ -63,12 +64,13 @@ export default function CardItem({
       </h3>
 
       <h4 className={css.imageTitles}>Основне зображення</h4>
+      <a href={wikipedia} target="_blank" rel="noreferrer noopener">
       <img
         src={imageReal}
         alt={`${name} — основне зображення`}
         onError={handleImageError}
       />
-
+      </a>
       <h4 className={css.imageTitles}>Фото товару</h4>
       <img
         src={imageToy}
