@@ -12,4 +12,17 @@
     gap: 12px;
     padding: 10px;
     outline: 1px solid grey;
+    background-color: #ffc7d1;
+}
+.older{
+    composes:item;
+    background-color: #f1f13c;
+}
+.old{
+    composes:item;
+    background-color: #abfcab;
+}
+.allAge{
+    composes:item;
+    background-color: rgb(179, 215, 228);
 }

@@ -1,4 +1,5 @@
 import CardItem from "@/componets/CardItem/CardItem.jsx"; //! без стилізації
+import {setBgColor} from "@/utils"
 import css from './CardList.module.css'
 
 
@@ -30,7 +31,9 @@ export default function CardList({ items }) {
 
           //   outline: "1px solid grey",
           // }}
-          className={css.item}
+          // className={css.item}
+          className={css[setBgColor(item.age)]}
+
           key={item.id}
         >
 <CardItem

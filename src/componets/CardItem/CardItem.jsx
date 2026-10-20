@@ -1,6 +1,6 @@
 import css from "./CardItem.module.css";
 import defaultImage from "./default.jpg"; //! Дефолтне зображення
-
+// import {setBgColor} from "@/utils"
 console.log("default:", defaultImage);
 
 //! Стилі для текстових полів
