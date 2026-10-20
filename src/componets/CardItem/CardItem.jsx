@@ -47,28 +47,29 @@ export default function CardItem({
 
   return (
     <>
-      <h3
-        style={{
-          marginBottom: 12,
-          padding: "12px 16px",
-          fontSize: 32,
-          textAlign: "center",
-          borderRadius: 8,
-          backgroundColor: "yellow",
-          color: "blue",
-        }}
+      <h3 
+        // style={{
+        //   marginBottom: 12,
+        //   padding: "12px 16px",
+        //   fontSize: 32,
+        //   textAlign: "center",
+        //   borderRadius: 8,
+        //   backgroundColor: "yellow",
+        //   color: "blue",
+        // }}
+        className={css.itemTitle}
       >
         {name}
       </h3>
 
-      <h4 style={imageTitles}>Основне зображення</h4>
+      <h4 className={css.imageTitles}>Основне зображення</h4>
       <img
         src={imageReal}
         alt={`${name} — основне зображення`}
         onError={handleImageError}
       />
 
-      <h4 style={imageTitles}>Фото товару</h4>
+      <h4 className={css.imageTitles}>Фото товару</h4>
       <img
         src={imageToy}
         alt={`${name} — фото товару`}
@@ -90,7 +91,7 @@ export default function CardItem({
         ))}
       </div> */}
        
-      <h4 style={imageTitles}>Додаткове зображення</h4>
+      <h4 className={css.imageTitles}>Додаткове зображення</h4>
       <div className={css.additionalImageBox}>
         {imageAdditional.map((image, index) => (
         <img
@@ -108,51 +109,51 @@ export default function CardItem({
         onError={handleImageError}
       /> */}
 
-      <p style={textField}>
-        Категорія: <span style={textFieldValue}>{category}</span>
+      <p className={css.textField}>
+        Категорія: <span className={css.textFieldValue}>{category}</span>
       </p>
 
-      <p style={textField}>
-        Тип продукту: <span style={textFieldValue}>{productType}</span>
+      <p className={css.textField}>
+        Тип продукту: <span className={css.textFieldValue}>{productType}</span>
       </p>
 
-      <p style={textField}>
-        Вік: <span style={textFieldValue}>{age}</span>
+      <p className={css.textField}>
+        Вік: <span className={css.textFieldValue}>{age}</span>
       </p>
 
-      <p style={textField}>
-        Гендер: <span style={textFieldValue}>{gender}</span>
+      <p className={css.textField}>
+        Гендер: <span className={css.textFieldValue}>{gender}</span>
       </p>
 
-      <p style={textField}>
-        Де з'являвся: <span style={textFieldValue}>{showMovie}</span>
+      <p className={css.textField}>
+        Де з'являвся: <span className={css.textFieldValue}>{showMovie}</span>
       </p>
 
-      <p style={textField}>
-        Герої: <span style={textFieldValue}>{character}</span>
+      <p className={css.textField}>
+        Герої: <span className={css.textFieldValue}>{character}</span>
       </p>
 
-      <p style={textField}>
-        Рік випуску: <span style={textFieldValue}>{year}</span>
+      <p className={css.textField}>
+        Рік випуску: <span className={css.textFieldValue}>{year}</span>
       </p>
 
-      <p style={textField}>
-        Ціна: <span style={textFieldValue}>{price}</span>
+      <p className={css.textField}>
+        Ціна: <span className={css.textFieldValue}>{price}</span>
       </p>
 
-      <p style={textField}>
-        Опис: <span style={textFieldValue}>{discription}</span>
+      <p className={css.textField}>
+        Опис: <span className={css.textFieldValue}>{discription}</span>
       </p>
 
       {interestingInfo && (
-        <p style={textField}>
-          Цікаво: <span style={textFieldValue}>{interestingInfo}</span>
+        <p className={css.textField}>
+          Цікаво: <span className={css.textFieldValue}>{interestingInfo}</span>
         </p>
       )}
 
       {features && (
         <div>
-          <p style={textField}>Особливості:</p>
+          <p className={css.textField}>Особливості:</p>
           <ul>
             {features.map((feature, index) => (
               <li key={index}>{feature}</li>
@@ -162,24 +163,25 @@ export default function CardItem({
       )}
 
       <button
-        style={{
-          width: "70%",
-          margin: "20px auto",
-          padding: "16px 32px",
-          display: "inline-block",
-          alignItems: "center",
-          fontFamily: "Franklin Gothic Medium, Arial Narrow",
-          fontWeight: 700,
-          fontSize: "1.5rem",
-          borderRadius: "12px",
-          color: "#ffffff",
-          cursor: "pointer",
-          backgroundColor: "#008080",
-          textShadow:
-            "1px 1px 2px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.2), 4px 4px 8px rgba(0, 0, 0, 0.1)",
-          boxShadow:
-            "inset 0 0 16px 8px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.9)",
-        }}
+        // style={{
+        //   width: "70%",
+        //   margin: "20px auto",
+        //   padding: "16px 32px",
+        //   display: "inline-block",
+        //   alignItems: "center",
+        //   fontFamily: "Franklin Gothic Medium, Arial Narrow",
+        //   fontWeight: 700,
+        //   fontSize: "1.5rem",
+        //   borderRadius: "12px",
+        //   color: "#ffffff",
+        //   cursor: "pointer",
+        //   backgroundColor: "#008080",
+        //   textShadow:
+        //     "1px 1px 2px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.2), 4px 4px 8px rgba(0, 0, 0, 0.1)",
+        //   boxShadow:
+        //     "inset 0 0 16px 8px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.9)",
+        // }}
+        className={css.button}
         type="button"
       >
         Додати до кошику
