@@ -1,4 +1,4 @@
-
+import css from "./CardItem.module.css";
 import defaultImage from "./default.jpg"; //! Дефолтне зображення
 
 console.log("default:", defaultImage);
@@ -91,10 +91,10 @@ export default function CardItem({
       </div> */}
        
       <h4 style={imageTitles}>Додаткове зображення</h4>
-      <div className="additionalImageBox">
+      <div className={css.additionalImageBox}>
         {imageAdditional.map((image, index) => (
         <img
-        className="imageAdditional"
+        className={css.imageAdditional}
         key={index}
         src={image}
         alt={`${name} — додаткове фото`}

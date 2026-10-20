@@ -4,7 +4,7 @@
     "type": "toy",
     "category": "Іграшки",
     "image": {
-      "real": "/star-wars-shop/images/millennium-falcon-real.jpg",
+      "real": "https://live.staticflickr.com/65535/48512627247_cf5c7ea33b_o.jpg", 
       "toy": "/star-wars-shop/images/millennium-falcon.jpg",
       "additional": [
         "/star-wars-shop/images/millennium-falcon-detail-1.jpg",
@@ -64,13 +64,13 @@
     "type": "toy",
     "category": "Іграшки",
     "image": {
-      "real": "/images/luke-skywalker-real.jpg",
-      "toy": "/images/luke-lightsaber.jpg",
+      "real": "/star-wars-shop/images/luke-skywalker-real.jpg",
+      "toy": "/star-wars-shop/images/luke-lightsaber.jpg",
       "additional": [
-        "/images/luke-lightsaber-detail.jpg",
-        "/images/luke-lightsaber-detail.jpg",
-        "/images/luke-lightsaber-detail.jpg",
-        "/images/luke-lightsaber-detail.jpg"
+        "/star-wars-shop/images/luke-lightsaber-detail-1.jpg",
+        "/star-wars-shop/images/luke-lightsaber-detail-2.jpg",
+        "/star-wars-shop/images/luke-lightsaber-detail-3.jpg",
+        "/star-wars-shop/images/luke-lightsaber-detail-4.jpg"
       ]
     },
     "name": "Luke Skywalker Lightsaber",
