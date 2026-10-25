@@ -6,7 +6,7 @@ import './index.css'
 import App from '@/componets/App/App.jsx'
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter basename="/star-wars-shop">
+    <BrowserRouter basename="/airplane-model-store2-stylization3">
       <App />
      </BrowserRouter>
   </StrictMode>,
