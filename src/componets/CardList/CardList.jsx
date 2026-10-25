@@ -4,7 +4,7 @@ import css from './CardList.module.css'
 
 
 export default function CardList({ items }) {
-  console.log("items:", items);
+  // console.log("items:", items);
   return (
     <ul
       // style={{

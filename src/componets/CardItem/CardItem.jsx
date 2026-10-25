@@ -1,7 +1,8 @@
 import css from "./CardItem.module.css";
 import defaultImage from "./default.jpg"; //! Дефолтне зображення
 // import {setBgColor} from "@/utils"
-console.log("default:", defaultImage);
+import {getManufacturingYears} from "@/utils";
+// console.log("default:", defaultImage);
 
 //! Стилі для текстових полів
 const textField = {
@@ -39,7 +40,7 @@ export default function CardItem({
   features,
   wikipedia
 }) {
-  console.log("imageAdditional:",imageAdditional);
+  // console.log("imageAdditional:",imageAdditional);
   //! Якщо зображення не завантажилося — показуємо default.jpg
   const handleImageError = (event) => {
     event.currentTarget.onerror = null;
@@ -138,6 +139,11 @@ export default function CardItem({
       <p className={css.textField}>
         Рік випуску: <span className={css.textFieldValue}>{year}</span>
       </p>
+
+      <p className={css.textField}>
+        Кількість років випуску: <span className={css.textFieldValue}>{getManufacturingYears(year)}</span>
+      </p>
+
 
       <p className={css.textField}>
         Ціна: <span className={css.textFieldValue}>{price}</span>
