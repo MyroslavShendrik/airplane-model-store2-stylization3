@@ -1,2 +1,2 @@
-export * from './getBgColor.js';
-export * from './formatDateDuration.js'
+export * from './getBackgroundColor.js';
+export * from './formatDateDuration.js';

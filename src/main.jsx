@@ -2,8 +2,16 @@ import { StrictMode } from 'react'
 import { BrowserRouter } from "react-router-dom";
 import { createRoot } from 'react-dom/client'
 
-import './index.css'
-import App from '@/componets/App/App.jsx'
+// import { App } from './components/App/App.jsx'
+import { App } from '@/components/App/App.jsx'
+
+//todo: var.1  Підключення Normalize (npm i normalize.css)
+// import 'normalize.css';  //! var.1 підключення тільки Normalize
+// import './index1.css'; //! підключення тільки Reset CSS
+
+//todo: var.2  Підключення Normalize (npm i -D postcss-normalize + postcss.config.js)
+import './index.css'; //! підключення Normalize і Reset CSS
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter basename="/airplane-model-store2-stylization3">
@@ -11,9 +19,4 @@ createRoot(document.getElementById("root")).render(
      </BrowserRouter>
   </StrictMode>,
 );
-
-
-
-
-
 
