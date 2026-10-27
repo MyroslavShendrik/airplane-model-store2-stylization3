@@ -12,7 +12,11 @@ import {
 // "../../utils/getBackgroundColor.js";
 import clsx from "clsx";
 // import './PlanesList.css'
-import css from "./PlanesList.module.css";
+// import css from "./PlanesList.module.css";
+import {
+  ListPlanes,
+  ItemPlanes
+ } from './PlanesList.styled'; //! Emotion
 
 const className = clsx(
   "first",
@@ -58,7 +62,8 @@ console.log("className:", className); // "first 10 third fifth"
 // console.log("getBgColorVanillaCSS:",getBgColorVanillaCSS(item.info.year))
 function PlanesList({ items }) {
   return (
-    <ul
+
+    <ListPlanes
       //   style={{
       //     marginLeft: 10,
       //     marginRight: 10,
@@ -69,10 +74,11 @@ function PlanesList({ items }) {
       //     outline: "1px solid red",
       //   }}
       // className="planesList"
-      className={css.planesList}
+      // className={css.planesList}
     >
+    
       {items.map((item) => (
-        <li
+        <ItemPlanes
           //   style={{
           //     display: "grid",
           //     gap: 12,
@@ -90,7 +96,7 @@ function PlanesList({ items }) {
           // className={css.planesItem}
           // className={css.last}
           // className={css.current}
-          className={css[getBgColorCSSModule(item.info.year)]}
+          // className={css[getBgColorCSSModule(item.info.year)]}
           key={item.id}
         >
           <PlaneItem
@@ -108,9 +114,9 @@ function PlanesList({ items }) {
             startData={item.manufacturing.start}
             endData={item.manufacturing.end}
           />
-        </li>
+        </ItemPlanes>
       ))}
-    </ul>
+     </ListPlanes>
   );
 }
 

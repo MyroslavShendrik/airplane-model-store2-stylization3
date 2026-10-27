@@ -49,6 +49,12 @@ console.log("iconSize:", iconSize);
 import { getManufacturingYears } from "@/utils";
 
 import css from "./PlaneItem.module.css";
+import {
+  PlaneTitle,
+  TextField,
+  TextFieldValue,
+  ImageTitles
+} from './PlaneItem.styled'; //! Emotion
 
 //! Стилі для текстових полів
 const textField = {
@@ -91,7 +97,7 @@ export default function PlaneItem({
 }) {
   return (
     <>
-      <h3
+      <PlaneTitle
         // style={{
         //   marginBottom: 12,
         //   padding: "12px 16px",
@@ -102,10 +108,10 @@ export default function PlaneItem({
         //   color: "blue",
         // }}
         // className="planeTitle"
-        className={css.planeTitle}
+        // className={css.planeTitle}
       >
         {nameBrief}
-      </h3>
+      </PlaneTitle>
       {/* <ImAirplane
        size={59}
        color="red"
@@ -113,66 +119,42 @@ export default function PlaneItem({
        className={css.ImAirplane}
       /> */}
       <img src={urlMain} alt={nameBrief} />
-      <p
-        // className="textField"
-        className={css.textField}
-      >
+    <TextField>
         <FcTrademark size={iconSize.md} className={css.icon} /> Повна назва:{" "}
         <span className={css.textFieldValue}>{nameFull}</span>
-      </p>
-      <p
-        // className="textField"
-        className={css.textField}
-      >
+      </TextField>
+    <TextField>
         <GiCommercialAirplane size={iconSize.md} className={css.icon} /> Тип:{" "}
-        <span className={css.textFieldValue}>{type}</span>{" "}
-      </p>
-      <p
-        // className="textField"
-        className={css.textField}
-      >
+        <span className={css.textFieldValue}>{type}</span>
+      </TextField>
+    <TextField>
         <GiCeremonialMask size={iconSize.md} className={css.icon} /> Прізвисько:{" "}
         <span className={css.textFieldValue}>{nickname}</span>
-      </p>
-      <p
-        // className="textField"
-        className={css.textField}
-      >
+      </TextField>
+    <TextField>
         <AiOutlineFlag size={iconSize.md} className={css.icon} /> Країна
         виробник: <span className={css.textFieldValue}>{country}</span>
-      </p>
-      <p
-        // className="textField"
-        className={css.textField}
-      >
+      </TextField>
+    <TextField>
         <AiOutlineClockCircle size={iconSize.md} className={css.icon} /> Рік
         випуску: <span className={css.textFieldValue}>{year}</span>
-      </p>
+      </TextField>
 
-      <p
-        // className="textField"
-        className={css.textField}
-      >
+    <TextField>
         <TbClockHour4Filled size={iconSize.md} className={css.icon} />{" "}
         Тривалість виробництва (в роках):{" "}
         <span className={css.textFieldValue}>
           {getManufacturingYears(startData, endData)}
         </span>
-      </p>
-      <p
-        // className="textField"
-        className={css.textField}
-      >
+      </TextField>
+    <TextField>
         <CiBadgeDollar size={iconSize.md} className={css.icon} /> Ціна:{" "}
         <span className={css.textFieldValue}>{price}</span>
-      </p>
-      <p
-        // className="textField"
-        className={css.textField}
-      >
+      </TextField>
+    <TextField>
         <AiOutlineInfoCircle size={iconSize.md} className={css.icon} /> Опис:{" "}
         <span className={css.textFieldValue}>{description}</span>
-      </p>
+      </TextField>
       <p // className="imageTitles"
         className={css.imageTitles}
       >
