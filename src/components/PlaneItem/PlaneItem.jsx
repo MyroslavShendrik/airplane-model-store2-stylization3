@@ -1,4 +1,5 @@
-import PropTypes from "prop-types";''
+import PropTypes from "prop-types";
+("");
 import defaultImage from "./default.jpg"; //! Дефолтне зображення
 // import './PlaneItem.css'
 //! Бібліотека react-icons
@@ -45,12 +46,9 @@ import { iconSize } from "@/constants";
 console.log("iconSize:", iconSize);
 
 // import {getManufacturingYears} from "@/utils/formatDateDuration.js"
-import {getManufacturingYears} from "@/utils"
+import { getManufacturingYears } from "@/utils";
 
 import css from "./PlaneItem.module.css";
-
-
-
 
 //! Стилі для текстових полів
 const textField = {
@@ -89,7 +87,7 @@ export default function PlaneItem({
   price,
   description,
   startData,
-  endData
+  endData,
 }) {
   return (
     <>
@@ -155,7 +153,11 @@ export default function PlaneItem({
         // className="textField"
         className={css.textField}
       >
-        <TbClockHour4Filled size={iconSize.md} className={css.icon} /> Тривалість виробництва (в роках): <span className={css.textFieldValue}>{getManufacturingYears(startData,endData)}</span>
+        <TbClockHour4Filled size={iconSize.md} className={css.icon} />{" "}
+        Тривалість виробництва (в роках):{" "}
+        <span className={css.textFieldValue}>
+          {getManufacturingYears(startData, endData)}
+        </span>
       </p>
       <p
         // className="textField"
@@ -182,8 +184,8 @@ export default function PlaneItem({
       <p // className="imageTitles"
         className={css.imageTitles}
       >
-        <CiAirportSign1 size={iconSize.lg} className={css.iconImage} /> Реальна
-        модель:
+        <CiAirportSign1 size={iconSize.lg} className={css.iconImage} />
+         Реальна модель:
       </p>
       <div className={css.actualImageBox}>
         {urlActual.map((image, index) => (
