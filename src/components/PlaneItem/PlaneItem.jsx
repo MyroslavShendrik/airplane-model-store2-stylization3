@@ -66,17 +66,17 @@ export default function PlaneItem({
       </TextField>
 
       <TextField>
-        <CiGlobe  size={iconSize.md} /> Прізвисько:{" "}
+        <GiCurlyMask  size={iconSize.md} /> Прізвисько:{" "}
         <TextFieldValue>{nickname}</TextFieldValue>
       </TextField>
 
       <TextField>
-        <GiCurlyMask size={iconSize.md} /> Країна виробник:{" "}
+        <CiGlobe size={iconSize.md} /> Країна виробник:{" "}
         <TextFieldValue>{country}</TextFieldValue>
       </TextField>
 
       <TextField>
-        <TbClockHour4Filled size={iconSize.md} /> Рік випуску:{" "}
+        <AiOutlineClockCircle size={iconSize.md} /> Рік випуску:{" "}
         <TextFieldValue>{year}</TextFieldValue>
       </TextField>
 
