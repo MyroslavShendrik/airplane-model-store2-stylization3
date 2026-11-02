@@ -1,4 +1,6 @@
 import PropTypes from "prop-types";
+//! Константи для розмірів іконок
+import { iconSize } from '@/constants';
 
 //! Бібліотека react-icons
 import { AiOutlineFlag, AiOutlineInfoCircle, AiOutlineClockCircle, AiOutlineDollarCircle } from "react-icons/ai";
