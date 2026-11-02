@@ -1,4 +1,24 @@
 import PropTypes from "prop-types";
+
+//! Бібліотека react-icons
+import { AiOutlineFlag, AiOutlineInfoCircle, AiOutlineClockCircle, AiOutlineDollarCircle } from "react-icons/ai";
+import { GiArmoredBoomerang, GiCeremonialMask, GiAirplaneDeparture, GiCommercialAirplane, GiCurlyMask } from "react-icons/gi";
+import { CiBadgeDollar, CiGlobe, CiAirportSign1 } from "react-icons/ci";
+import { TbClockHour4Filled } from "react-icons/tb";
+import { FcTrademark } from "react-icons/fc";
+//? nameBrief
+//? nameFull - <FcTrademark /> - Повна назва
+//? type - <GiArmoredBoomerang /> - бумеранг, <GiCommercialAirplane /> - літак- Тип
+//? nickname - <GiCeremonialMask /> маска1, <GiCurlyMask /> маска2  - Прізвисько
+//? country - <AiOutlineFlag /> - прапор, <CiGlobe /> - глобус - Країна виробник
+//? year - <AiOutlineClockCircle /> - годинник - Рік випуску
+//? duration - <TbClockHour4Filled /> - годинник - Тривалість виробництва(в роках)
+//? price - <CiBadgeDollar/> - $, <AiOutlineDollarCircle /> - $ - Ціна
+//? description - <AiOutlineInfoCircle /> - info - Опис
+//? <GiAirplaneDeparture /> - Рекламна модель
+//? <CiAirportSign1 /> - Реальна модель
+
+
 import defaultImage from "./default.jpg";
 
 import { iconSize } from "@/constants";
@@ -12,16 +32,6 @@ import {
   ActualImageBox,
   ActualImage,
   PlaneButton,
-  TrademarkIcon,
-  AirplaneIcon,
-  MaskIcon,
-  FlagIcon,
-  YearIcon,
-  DurationIcon,
-  PriceIcon,
-  InfoIcon,
-  PromoIcon,
-  RealIcon,
 } from "./PlaneItem.styled";
 
 export default function PlaneItem({
@@ -46,52 +56,54 @@ export default function PlaneItem({
       <img src={urlMain} alt={nameBrief} />
 
       <TextField>
-        <TrademarkIcon size={iconSize.md} /> Повна назва:{" "}
+        <FcTrademark size={iconSize.md} /> Повна назва:{" "}
         <TextFieldValue>{nameFull}</TextFieldValue>
       </TextField>
 
       <TextField>
-        <AirplaneIcon size={iconSize.md} /> Тип:{" "}
-        <TextFieldValue>{type}</TextFieldValue>
+        <GiCommercialAirplane size={iconSize.md} /> Тип:{" "}
+        <TextFieldValue>{type}</TextFieldValue>x
       </TextField>
 
       <TextField>
-        <MaskIcon size={iconSize.md} /> Прізвисько:{" "}
+        <CiGlobe  size={iconSize.md} /> Прізвисько:{" "}
         <TextFieldValue>{nickname}</TextFieldValue>
       </TextField>
 
       <TextField>
-        <FlagIcon size={iconSize.md} /> Країна виробник:{" "}
+        <GiCurlyMask size={iconSize.md} /> Країна виробник:{" "}
         <TextFieldValue>{country}</TextFieldValue>
       </TextField>
 
       <TextField>
-        <YearIcon size={iconSize.md} /> Рік випуску:{" "}
+        <TbClockHour4Filled size={iconSize.md} /> Рік випуску:{" "}
         <TextFieldValue>{year}</TextFieldValue>
       </TextField>
 
       <TextField>
-        <DurationIcon size={iconSize.md} /> Тривалість виробництва (в роках):{" "}
-        <TextFieldValue>{getManufacturingYears(startData, endData)}</TextFieldValue>
+        <TbClockHour4Filled size={iconSize.md} /> Тривалість виробництва (в роках):{" "}
+        <TextFieldValue>
+          {getManufacturingYears(startData, endData)}
+        </TextFieldValue>
       </TextField>
 
       <TextField>
-        <PriceIcon size={iconSize.md} /> Ціна:{" "}
+        <AiOutlineDollarCircle size={iconSize.md} /> Ціна:{" "}
         <TextFieldValue>{price}</TextFieldValue>
       </TextField>
 
       <TextField>
-        <InfoIcon size={iconSize.md} /> Опис:{" "}
+        <AiOutlineInfoCircle size={iconSize.md} /> Опис:{" "}
         <TextFieldValue>{description}</TextFieldValue>
       </TextField>
 
       <ImageTitles>
-        <PromoIcon size={iconSize.lg} /> Рекламна модель:
+        <GiAirplaneDeparture size={iconSize.lg} /> Рекламна модель:
       </ImageTitles>
       <img src={urlPromotional} alt={nameBrief} />
 
       <ImageTitles>
-        <RealIcon size={iconSize.lg} /> Реальна модель:
+        <CiAirportSign1 size={iconSize.lg} /> Реальна модель:
       </ImageTitles>
       <ActualImageBox>
         {urlActual.map((image, index) => (

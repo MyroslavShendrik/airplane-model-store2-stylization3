@@ -1,17 +1,4 @@
 import styled from "@emotion/styled";
-import { FcTrademark } from "react-icons/fc";
-import {
-  GiCommercialAirplane,
-  GiCeremonialMask,
-  GiAirplaneDeparture,
-} from "react-icons/gi";
-import {
-  AiOutlineFlag,
-  AiOutlineClockCircle,
-  AiOutlineInfoCircle,
-} from "react-icons/ai";
-import { TbClockHour4Filled } from "react-icons/tb";
-import { CiBadgeDollar, CiAirportSign1 } from "react-icons/ci";
 
 export const PlaneTitle = styled.h3`
   margin-bottom: 12px;
@@ -69,27 +56,4 @@ export const PlaneButton = styled.button`
     4px 4px 8px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 0 16px 8px rgba(0, 0, 0, 0.3),
     0 8px 16px rgba(0, 0, 0, 0.9);
-`;
-
-const iconBase = `
-  margin-bottom: -8px;
-  color: #9b25fc;
-`;
-
-export const TrademarkIcon = styled(FcTrademark)`${iconBase}`;
-export const AirplaneIcon = styled(GiCommercialAirplane)`${iconBase}`;
-export const MaskIcon = styled(GiCeremonialMask)`${iconBase}`;
-export const FlagIcon = styled(AiOutlineFlag)`${iconBase}`;
-export const YearIcon = styled(AiOutlineClockCircle)`${iconBase}`;
-export const DurationIcon = styled(TbClockHour4Filled)`${iconBase}`;
-export const PriceIcon = styled(CiBadgeDollar)`${iconBase}`;
-export const InfoIcon = styled(AiOutlineInfoCircle)`${iconBase}`;
-
-export const PromoIcon = styled(GiAirplaneDeparture)`
-  ${iconBase}
-  color: blue;
-`;
-export const RealIcon = styled(CiAirportSign1)`
-  ${iconBase}
-  color: blue;
 `;
