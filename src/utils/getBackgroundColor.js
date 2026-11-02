@@ -14,6 +14,7 @@ export function getBgColorBuiltInStyles(year) {
   return bgColor;
 }
 
+
 //todo: var.1
 // export function getBgColorVanillaCSS(year) {
 //     const classNames = ["planesItem"];
@@ -38,4 +39,11 @@ export function getBgColorCSSModule(year) {
   if (year > 1945) classNames = "last";
   if (year > 1999) classNames = "current";
   return classNames;
+}
+//! стилізація emotion 
+export function getBgColorEmotion({ yearOfManufacture }) {
+  let bgColor = "#ffdb92";
+  if (yearOfManufacture > 1945) bgColor = "#d2fdbd";
+  if (yearOfManufacture > 1999) bgColor = "#d6f1ff";
+  return bgColor;
 }

@@ -98,6 +98,7 @@ function PlanesList({ items }) {
           // className={css.current}
           // className={css[getBgColorCSSModule(item.info.year)]}
           key={item.id}
+          yearOfManufacture={item.info.year}
         >
           <PlaneItem
             urlMain={item.url.main}

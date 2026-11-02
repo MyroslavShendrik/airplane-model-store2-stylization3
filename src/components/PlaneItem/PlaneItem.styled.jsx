@@ -28,6 +28,11 @@ export const TextFieldValue = styled.span`
 export const ImageTitles = styled.p`
   text-align: center;
   color: blue;
+  svg {
+    margin-bottom: -10px;
+    margin-right: 4px;
+    color: blue;
+  }
 `;
 
 export const ActualImageBox = styled.div`
