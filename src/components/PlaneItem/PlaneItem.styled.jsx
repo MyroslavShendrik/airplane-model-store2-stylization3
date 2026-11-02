@@ -13,6 +13,11 @@ export const PlaneTitle = styled.h3`
 export const TextField = styled.p`
   font-size: 18px;
   font-weight: 700;
+  /*//todo: Налаштування для іконок */
+  svg {
+    margin-bottom: -8px;
+    color: #9b25fc;
+  }
 `;
 
 export const TextFieldValue = styled.span`
@@ -52,8 +57,11 @@ export const PlaneButton = styled.button`
   color: #ffffff;
   cursor: pointer;
   background-color: #008080;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.2),
+  text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.4),
+    2px 2px 4px rgba(0, 0, 0, 0.2),
     4px 4px 8px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 0 16px 8px rgba(0, 0, 0, 0.3),
+  box-shadow:
+    inset 0 0 16px 8px rgba(0, 0, 0, 0.3),
     0 8px 16px rgba(0, 0, 0, 0.9);
 `;

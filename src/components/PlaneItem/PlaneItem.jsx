@@ -23,7 +23,7 @@ import { FcTrademark } from "react-icons/fc";
 
 import defaultImage from "./default.jpg";
 
-import { iconSize } from "@/constants";
+// import { iconSize } from "@/constants";
 import { getManufacturingYears } from "@/utils";
 
 import {
