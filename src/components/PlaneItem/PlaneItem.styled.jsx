@@ -1,7 +1,11 @@
 import styled from "@emotion/styled";
 
 export const PlaneTitle = styled.h3`
-  margin-bottom: 12px;
+  //! margin-bottom: 12px;
+  
+  /*//! Налаштування відступів - spacing */
+    //! margin-bottom: ${props => props.theme.spacing * 3}px;
+margin-bottom: ${props => props.theme.spacing(3)};
   padding: 12px 16px;
   font-size: 32px;
   text-align: center;
@@ -32,6 +36,8 @@ export const ImageTitles = styled.p`
     margin-bottom: -10px;
     margin-right: 4px;
     color: blue;
+    width: ${props => props.theme.iconSize.lg}px;
+    height: ${props => props.theme.iconSize.lg}px;
   }
 `;
 

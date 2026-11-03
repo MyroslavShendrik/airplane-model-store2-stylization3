@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 // import './Section.css'
 // import css from "./Section.module.css"; //! CSS-модулі
-import { TitleLugrasimoBold } from './Section.styled'; //! Emotion
+import { TitleLugrasimoBold, Global } from './Section.styled'; //! Emotion
 
 function Section({ title, children }) {
   return (
-    <section>
+    <Global>
       {title && (
         // <h2
         //   // style={{
@@ -24,7 +24,7 @@ function Section({ title, children }) {
         <TitleLugrasimoBold>{title}</TitleLugrasimoBold>
       )}
       {children}
-    </section>
+    </Global>
   );
 }
 

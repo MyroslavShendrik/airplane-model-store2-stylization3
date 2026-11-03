@@ -100,7 +100,10 @@ export default function PlaneItem({
       </TextField>
 
       <ImageTitles>
-        <GiAirplaneDeparture size={iconSize.lg} /> Рекламна модель:
+        <GiAirplaneDeparture 
+        //  size={iconSize.lg} 
+        
+         /> Рекламна модель:
       </ImageTitles>
       <img src={urlPromotional} alt={nameBrief} />
 
