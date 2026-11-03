@@ -64,7 +64,7 @@ export default function PlaneItem({
 
       <TextField>
         <GiCommercialAirplane size={iconSize.md} /> Тип:{" "}
-        <TextFieldValue>{type}</TextFieldValue>x
+        <TextFieldValue>{type}</TextFieldValue>
       </TextField>
 
       <TextField>

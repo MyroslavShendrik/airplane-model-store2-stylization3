@@ -9,5 +9,6 @@ export const TitleLugrasimoBold = styled.h2`
     font-family: "Lugrasimo", cursive;
     font-weight: 700;
     font-style: normal;
-    color: blue;
+    //! color: blue;
+    color: ${props => props.theme.fontColor.mainTitle};
 `;
